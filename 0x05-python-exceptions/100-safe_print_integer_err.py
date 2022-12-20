@@ -6,5 +6,6 @@ def safe_print_integer_err(value):
     except ValueError as exc:
         return False
         sys.stderr.write("Exception:", exc.args)
+        sys.exit()
     else:
         return True
