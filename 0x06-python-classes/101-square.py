@@ -3,7 +3,7 @@
 """Defines a class square"""
 
 
-class Square:
+class Square():
     """Defines a square."""
 
     def __init__(self, size=0, position=(0, 0)):
@@ -46,11 +46,11 @@ class Square:
         Args:
             value: New tuple to update 'position'
         """
-        if (not isinstance(value, tuple) or 
+        if (not isinstance(value, tuple) or
                 len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
                 not all(num >= 0 for num in value)):
-            raise TypeError("position must be a tuple of 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integer")
         self.__position = value
 
     def area(self):
@@ -63,11 +63,11 @@ class Square:
 
     def my_print(self):
         """Prints in stdout the square with the character #."""
-        if self.size == 0:
+        if self.__size == 0:
             print("")
             return
 
         [print("") for i in range(self.__position[1])]
         for i in range(self.__size):
-                print(" " * self.__position[0] + "#" * self.__size)
-                print("", end="")
+            # [print(" ", end="") for m in range(self.__position[0])]
+            print(" " * self.__position[0] + "#" * self.__size)
