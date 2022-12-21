@@ -46,7 +46,7 @@ class Square:
         Args:
             value: New tuple to update 'position'
         """
-        if (not isinstance(value, tuple) or 
+        if (not isinstance(value, tuple) or
                 len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
                 not all(num >= 0 for num in value)):
@@ -69,6 +69,6 @@ class Square:
 
         [print("") for i in range(self.__position[1])]
         for i in range(self.__size):
-                [print(" ", end="") for m in range(self.__position[0])]
-                [print("#", end="") for n in range(self.__size)]
-                print("")
+            [print(" ", end="") for m in range(self.__position[0])]
+            [print("#", end="") for n in range(self.__size)]
+            print("")
