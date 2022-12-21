@@ -47,7 +47,7 @@ class Square:
         Args:
             value: New tuple to update 'position'
         """
-        if (not isinstance(value, tuple)) and (len(value) != 2):
+        if (not isinstance(value, tuple)) or (len(value) != 2):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
@@ -64,6 +64,7 @@ class Square:
         """Prints in stdout the square with the character #."""
         if self.size == 0:
             print("")
+
         else:
-            for i in range(self.size):
-                print(" " * self.position[0] + "#" * self.size)
+            for i in range(self.__size):
+                print(" " * self.__position[0] + "#" * self.__size)
