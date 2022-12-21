@@ -22,7 +22,7 @@ class Square:
     @size.setter
     def size(self, value):
         """Set or update private instance attribute 'size'.
-        
+
         Args:
             value: New value to update 'size'
         """
@@ -39,4 +39,3 @@ class Square:
             Current square area
         """
         return (self.__size * self.__size)
-
