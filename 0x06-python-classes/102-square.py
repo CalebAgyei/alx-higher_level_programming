@@ -26,10 +26,13 @@ class Square:
         Args:
             value: New value to update 'size'
         """
-        if not isinstance(value, int) or not isinstance(value, float):
-            raise TypeError("size must be a number")
-        elif value < 0:
-            raise ValueError("size must be >= 0")
+        try:
+            if not isinstance(value, int) or not isinstance(value, float):
+                raise TypeError("size must be a number")
+            elif value < 0:
+                raise ValueError("size must be >= 0")
+        except Exception:
+            print("")
         self.__size = value
 
     def area(self):
@@ -38,4 +41,7 @@ class Square:
         Returns:
             Current square area
         """
+        return (self.__size * self.__size)
+
+    def __call__(self):
         return (self.__size * self.__size)
