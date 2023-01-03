@@ -38,3 +38,28 @@ class Node:
         self.__next_node = value
 
 class SinglyLinkedList:
+    """Creates a singly linked list."""
+    def __init__(self):
+        """Initializes singly linked list."""
+        self.__head = None
+
+    def printll(self):
+        if self.__head is None:
+            print("Empty linked list")
+            return
+
+        itr = self.__head
+        while itr:
+            itr = itr.__next_node
+        print(itr.data)
+
+    def sorted_insert(self, value):
+        new_node = Node(value)
+        self.__head = new_node
+
+
+if __name__ == '__main__':
+    ll = SinglyLinkedList()
+    ll.sorted_insert(2)
+    ll.printll()
+
