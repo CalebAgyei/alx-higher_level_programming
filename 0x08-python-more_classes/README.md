@@ -8,3 +8,4 @@ Task 4 - eval() and repr()
 Task 5 - Learn about Destructors __del__()
 Task 6 - Track number of instances
 Task 7 - Change symbol
+Task 8 - Compare rectangles
