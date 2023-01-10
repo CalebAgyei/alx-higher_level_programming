@@ -13,5 +13,6 @@ def read_file(filename=""):
         line = f.read()
         print(line)
 
+
 if __name__ == "__main__":
     pass
