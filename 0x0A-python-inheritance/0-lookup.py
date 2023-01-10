@@ -7,7 +7,7 @@ def lookup(obj):
         @obj: object whose attributes and methods need to be listed
     """
 
-    return dir(obj)
+    return list(dir(obj))
 
 if __name__ == "__main__":
     pass
