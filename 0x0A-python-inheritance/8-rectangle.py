@@ -10,7 +10,7 @@ class BaseGeometry:
 
     def integer_validator(self, name, value):
         """Validates integer."""
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
 
         if value <= 0:
@@ -30,8 +30,7 @@ class Rectangle(BaseGeometry):
             @width: Width of rectangle.
             @height: Height of rectangle.
         """
-        super().integer_validator("width", width)
-        super().integer_validator("height", height)
-
+        self.integer_validator("width", width)
         self.__width = width
+        self.integer_validator("height", height)
         self.__height = height
