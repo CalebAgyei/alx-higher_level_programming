@@ -11,7 +11,7 @@ def is_kind_of_class(obj, a_class):
         @obj: The object to check.
         @a_class: The specified class to match to obj to.
     """
-    
+
     if isinstance(obj, a_class):
         return True
 
