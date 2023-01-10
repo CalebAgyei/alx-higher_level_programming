@@ -30,8 +30,8 @@ class Rectangle(BaseGeometry):
             @width: Width of rectangle.
             @height: Height of rectangle.
         """
-        self.integer_validator("width", width)
-        self.__width = width
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
 
-        self.integer_validator("height", height)
+        self.__width = width
         self.__height = height
