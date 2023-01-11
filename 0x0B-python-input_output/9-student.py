@@ -2,6 +2,7 @@
 """Defines a class student."""
 
 
+
 import json
 
 
@@ -10,6 +11,7 @@ class Student:
 
     def __init__(self, first_name, last_name, age):
         """Initializes student.
+
 
         Args:
             @first_name: Student's first name
