@@ -11,4 +11,8 @@ def class_to_json(obj):
         @obj: An instance of a Class.
     """
 
-    return json.dumps(obj)
+    try:
+        return json.dumps(obj)
+
+    except Exception:
+        pass
