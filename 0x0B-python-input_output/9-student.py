@@ -2,8 +2,6 @@
 """Defines a class student."""
 
 
-
-
 class Student:
     """Represents a student."""
 
