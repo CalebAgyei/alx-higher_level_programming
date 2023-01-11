@@ -7,7 +7,7 @@ import json
 
 class Student:
     """Represents a student."""
-    
+
     def __init__(self, first_name, last_name, age):
         """Initializes student.
 
