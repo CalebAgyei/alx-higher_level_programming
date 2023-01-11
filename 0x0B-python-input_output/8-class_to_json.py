@@ -2,9 +2,6 @@
 """Defines a function class_to_join."""
 
 
-import json
-
-
 def class_to_json(obj):
     """Returns the dictionary description for JSON.
 
@@ -12,8 +9,4 @@ def class_to_json(obj):
         @obj: An instance of a Class.
     """
 
-    try:
-        return json.dumps(obj)
-
-    except Exception:
-        pass
+    return obj.__dict__
