@@ -7,6 +7,7 @@ import json
 
 def class_to_json(obj):
     """Returns the dictionary description for JSON.
+
     Args:
         @obj: An instance of a Class.
     """
