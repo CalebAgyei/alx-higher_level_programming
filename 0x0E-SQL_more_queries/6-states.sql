@@ -11,6 +11,6 @@ USE hbtn_0d_usa;
 CREATE TABLE states (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(256) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE (id)
+  PRIMARY KEY (`id`)
+  -- UNIQUE (id) // Primary key is also UNIQUE
 );
