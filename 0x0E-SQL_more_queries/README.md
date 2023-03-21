@@ -102,7 +102,7 @@ $
 
 **In the container, credentials are `root/root`**
 
-### How to import a SQL dump
+## How to import a SQL dump
 
 ```sh
 $ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
@@ -123,4 +123,4 @@ id  name
 $
 ```
 
-![SQL Cheatsheet](https://drive.google.com/file/d/1T-6stLJPE-laYLzX8TXs2yYUrZ8vHTq_/view?usp=share_link)
+![SQLCheatsheet](https://drive.google.com/file/d/1T-6stLJPE-laYLzX8TXs2yYUrZ8vHTq_/view)
